@@ -1,0 +1,11 @@
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[0])
+print(numbers[3])
+print(numbers[2])
+print(numbers[4])
+
+# Remember:
+# - First index = 0
+# - Last index = n - 1
+# - Accessing an invalid index causes IndexError.
