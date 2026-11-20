@@ -1,0 +1,28 @@
+Assignment 10 - Time Complexity
+
+Program A:
+    for i in range(n):
+        print(i)
+Answer: O(n)
+Reason: one loop that runs n times.
+
+Program B:
+    for i in range(n):
+        for j in range(n):
+            print(i, j)
+Answer: O(n^2)
+Reason: the inner loop runs n times for each of the n outer rounds (n x n).
+
+Program C:
+    for i in range(n):
+        print(i)
+    for j in range(n):
+        print(j)
+Answer: O(n)
+Reason: two separate loops, so n + n = 2n. Constants are dropped, giving O(n).
+
+Program D:
+    while n > 1:
+        n = n // 2
+Answer: O(log n)
+Reason: n is halved every round, so it reaches 1 after about log2(n) steps.
