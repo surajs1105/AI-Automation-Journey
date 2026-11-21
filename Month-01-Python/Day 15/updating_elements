@@ -1,0 +1,5 @@
+marks = [70, 80, 65, 90]
+
+marks[2] = 75
+
+print(marks)

@@ -1,0 +1,15 @@
+DSA 4 - Time complexity of Stack operations (Python list, top = end of list)
+
+Operation              Time complexity   Reason
+---------------------  ----------------  -----------------------------------------------
+push (append)          O(1) amortized    adds at the end; no shifting. Occasional resize
+                                         makes it O(n) once in a while, but averages O(1)
+pop (pop())            O(1)              removes the last item; no shifting
+peek (items[-1])       O(1)              direct index access
+is_empty (len == 0)    O(1)              length is stored by the list
+search (x in items)    O(n)              may check every element one by one
+
+Note: use the END of the list as the top of the stack. Using index 0 as the top
+(insert(0, x) / pop(0)) would be O(n) because every element has to shift.
+
+Space complexity: O(n) to store n elements.
